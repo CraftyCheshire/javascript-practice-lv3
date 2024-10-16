@@ -19,6 +19,8 @@ function checkPositiveOrNegative(number) {
 console.log("Task 1 Example: Positive or Negative?");
 console.log(checkPositiveOrNegative(10));  // Expected output: "Positive"
 console.log(checkPositiveOrNegative(-5));  // Expected output: "Negative"
+console.log(checkPositiveOrNegative(-13));  
+console.log(checkPositiveOrNegative(69)); 
 
 // TASK 1: Ternary Operator Exercise 1
 // TODO: Use the ternary operator to check if a string is empty or not.
@@ -26,7 +28,7 @@ console.log(checkPositiveOrNegative(-5));  // Expected output: "Negative"
 
 function checkEmptyString(str) {
   // TODO: Write your solution here
-
+  return str.length === 0 ? "Empty String" : "Non-empty String";
 }
 
 // Example usage
@@ -39,12 +41,15 @@ function checkEmptyString(str) {
 
 function checkDivisibleByFive(number) {
   // TODO: Write your solution here
-
+  return number % 5 === 0 ? "Divisible by 5" : "Not Divisible by 5";
 }
 
 // Example usage
-// console.log(checkDivisibleByFive(10));  // Expected output: "Divisible by 5"
-// console.log(checkDivisibleByFive(7));   // Expected output: "Not Divisible by 5"
+console.log("\n")
+console.log(checkDivisibleByFive(10));  // Expected output: "Divisible by 5"
+console.log(checkDivisibleByFive(7));   // Expected output: "Not Divisible by 5"
+console.log(checkDivisibleByFive(25));  // Expected output: "Divisible by 5"
+console.log(checkDivisibleByFive(13));   // Expected output: "Not Divisible by 5"
 
 
 // TASK 2: Array Destructuring Example
@@ -53,28 +58,27 @@ const cities = ["New York", "London", "Tokyo"];
 const [city1, city2] = cities;
 
 console.log("\nTask 2 Example: Array Destructuring (Cities)");
-console.log(`First City: ${city1}, Second City: ${city2}`);  // Expected output: "First City: New York, Second City: London"
-
+console.log(`First City: ${city1},, Second City: ${city2}`);  // Expected output: "First City: New York, Second City: London"
 // TASK 2: Array Destructuring Exercise 1
 // TODO: Destructure an array of three animals and log the second and third animals.
 
 const animals = ["Lion", "Tiger", "Elephant"];
 // TODO: Use array destructuring to extract three animals into three variables
-
+const [animals0, animals1, animals2] = animals;
 
 // Example usage
-// console.log(`First Animal: ${firstAnimal} Second Animal: ${secondAnimal}, Third Animal: ${thirdAnimal}`);  // Expected output: "Second Animal: Tiger, Third Animal: Elephant"
+console.log(`\nFirst Animal: ${animals0},, Second Animal: ${animals1},, Third Animal: ${animals2}`);  // Expected output: "Second Animal: Tiger, Third Animal: Elephant"
 
 // TASK 2: Array Destructuring Exercise 2
 // TODO: Destructure an array of four numbers and log the sum of the first two numbers.
 
 const numbers = [8, 12, 20, 30];
 // TODO: Use array destructuring to extract the first two numbers and calculate their sum
-// const [firstNum, secondNum] = numbers;  // Uncomment this line and complete the TODO
-// const sum = firstNum + secondNum;
+const [firstNum, secondNum] = numbers;  // Uncomment this line and complete the TODO
+const sum = firstNum + secondNum;
 
 // Example usage
-// console.log(`Sum: ${sum}`);  // Expected output: "Sum: 20"
+console.log(`\nSum: ${sum}`);  // Expected output: "Sum: 20"
 
 // Task 3: Get creative and use the ternary operator with your own example
 
